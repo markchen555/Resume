@@ -30,5 +30,4 @@ This project is meant to be completed while taking the JavaScript Basics course.
 
 ### License
 
-The project is licensed under the [MIT license](license.txt).# Online-Resume-Project
-# Online-Resume-Project
+The project is licensed under the [MIT license](license.txt).
