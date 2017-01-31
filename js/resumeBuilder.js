@@ -3,13 +3,13 @@ var bio = {
     "role": "Junior Software Engineer",
     "contacts": {
         "mobile": "626-254-3344",
-        "email": "markchen555@hotmmail.com",
+        "email": "markchen555@hotmail.com",
         "github": "markchen555",
         "location": "Los Angeles"
     },
-    "welcomeMessage": "I'm passionated junior front end developer",
+    "welcomeMessage": "I'm passionate Front-End Web Developer",
     "skills": [
-        "C-Language", "JavaScript", "HTML", "Linx"
+        "C-Language", "JavaScript", "HTML", "Linx", "CSS", "jQuery", "Bootstrap", "Knockout.js"
     ],
     "biopic": "images/fry.jpg"
 };
