@@ -1,32 +1,44 @@
 var bio = {
     "name": "Mark Chen",
-    "role": "Junior Software Engineer",
+    "role": "Front-End Web Developer",
     "contacts": {
         "mobile": "626-254-3344",
-        "email": "markchen555@hotmail.com",
+        "email": "markchen555@gmail.com",
         "github": "markchen555",
         "location": "Los Angeles"
     },
-    "welcomeMessage": "I'm passionate Front-End Web Developer",
+    "welcomeMessage": "I'm passionate Front-End Web Developer!",
     "skills": [
-        "C-Language", "JavaScript", "HTML", "Linx", "CSS", "jQuery", "Bootstrap", "Knockout.js"
+        "C-Language", "JavaScript", "HTML", "CSS", "jQuery", "Bootstrap", "Knockout.js"
     ],
-    "biopic": "images/fry.jpg"
+    "biopic": "images/me.png"
 };
 
 var work = {
     "jobs": [{
-        "employer": "Shinglian Associates",
-        "title": "Assistance",
+        "employer": "SHINGLIAN ASSOCIATES",
+        "title": "Executive Assistant",
         "dates": "2015 - 2016",
         "location": "West Covina",
-        "description": "Assist VP in the office"
+        "description": "Maintained and updated data for company website and social media platforms."
     }, {
-        "employer": "JL Motoring",
-        "title": "Associate",
-        "dates": "2012-2015",
+        "employer": "JL MOTORING",
+        "title": "Financial Analyst Associate",
+        "dates": "2013-2015",
         "location": "City of Industry",
-        "description": "General legdture"
+        "description": "Assisted in updating website and preparing traffic analysis reports."
+    }, {
+        "employer": "BANK OF AMERICA",
+        "title": "Client Associate",
+        "dates": "2012-2013",
+        "location": "Monterey Park",
+        "description": "Managed customer transactions and promoted bank services and products."
+    }, {
+        "employer": "SHOWOPT",
+        "title": "Market Analyst Internship",
+        "dates": "2011-2011",
+        "location": "Irvine",
+        "description": "Managed and maintained vBulleti n forum, website, and social media."
     }]
 };
 
@@ -34,8 +46,8 @@ var education = {
     "schools": [{
         "name": "42 University",
         "location": "Fremont, CA",
-        "degree": "Certification",
-        "majors": ["CompSci"],
+        "degree": "Bootcamp",
+        "majors": ["Computer Programing"],
         "dates": "2016",
         "url": "https://www.42.us.org/"
     }, {
@@ -47,24 +59,38 @@ var education = {
         "url": "https://uci.edu/"
     }],
     "onlineCourses": [{
-        "title": "JavaScript Basic",
+        "title": "Front-End Web Developer Certification",
         "school": "Udacity",
-        "dates": "2016",
+        "dates": "2017",
         "url": "https://www.udacity.com/"
     }]
 };
 
 var projects = {
     "projects": [{
-        "title": "resume1",
-        "dates": "2016",
-        "description": "Building resume using JavaScript",
-        "images": ["images/fry.jpg"]
+        "title": "Portfolio Site",
+        "dates": "2017",
+        "description": "Building JavaScript portfolio site",
+        "url": "https://markchen555.github.io/Portfolio/",
+        "images": ["images/Portfolio.png"]
     }, {
-        "title": "resume2",
-        "dates": "2016",
-        "description": "Building resume using JavaScript",
-        "images": ["images/fry.jpg"]
+        "title": "HTML5 Canvas Game",
+        "dates": "2017",
+        "description": "Created an online game using HTML5 Canvas",
+        "url": "https://markchen555.github.io/Classic-Arcade-Game-Clone-Project/",
+        "images": ["images/game.png"]
+    }, {
+        "title": "Web Optimization",
+        "dates": "2017",
+        "description": "Optimize website to run at 60fps",
+        "url": "https://markchen555.github.io/Website-Optimization-Project/",
+        "images": ["images/optimize.png"]
+    }, {
+        "title": "Neighborhood Map",
+        "dates": "2017",
+        "description": "Created search function within the neighborhood with Google and Yelp API",
+        "url": "https://markchen555.github.io/Neighborhood-Map-Project/public/",
+        "images": ["images/Neighborhood.png"]
     }]
 };
 
@@ -126,7 +152,7 @@ projects.display = function() {
     for (var project = 0; project < projects.projects.length; project++) {
         $("#projects").append(HTMLprojectStart);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace("#", projects.projects[project].url);
         $(".project-entry:last").append(formattedTitle);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
         $(".project-entry:last").append(formattedDates);
