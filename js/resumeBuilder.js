@@ -78,13 +78,13 @@ var projects = {
         "dates": "2017",
         "description": "Created an online game using HTML5 Canvas",
         "url": "https://markchen555.github.io/Classic-Arcade-Game-Clone-Project/",
-        "images": ["images/game.png"]
+        "images": ["images/Game.png"]
     }, {
         "title": "Web Optimization",
         "dates": "2017",
         "description": "Optimize website to run at 60fps",
         "url": "https://markchen555.github.io/Website-Optimization-Project/",
-        "images": ["images/optimize.png"]
+        "images": ["images/Optimize.png"]
     }, {
         "title": "Neighborhood Map",
         "dates": "2017",
