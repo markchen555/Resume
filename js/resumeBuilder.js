@@ -102,7 +102,7 @@ bio.display = function() {
     
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
-    $("#header").append(formattedBioPic);
+    $("#header").prepend(formattedBioPic);
     $("#header").append(formattedWelcomeMsg);
     
     var formattedContactInfo = [];

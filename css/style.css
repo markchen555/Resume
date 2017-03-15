@@ -26,7 +26,7 @@ body {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+  padding: 20px 5%;
 }
 
 h1 {
@@ -64,6 +64,25 @@ h4,
 h5 {
   padding:10px 5%;
 
+}
+
+hr {
+  border-top: 0px;
+  border-bottom: 1px solid #4c4c4c;
+}
+
+.project-link {
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.education-link {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.title-onlineClass {
+  padding-top: 50px;
 }
 
 .date-text {
@@ -109,12 +128,34 @@ a {
   padding: 10px 0;
 }
 
-/*.orange {
-  background-color: #f5ae23;
-}*/
+.role {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.work-title {
+  padding: 10px 0;
+}
+
+.orange {
+  color: #f5ae23;
+  display: block;
+  padding: 10px 0;
+}
 
 .orange-text {
   color: #f5ae23;
+}
+.orange-text a {
+  color: #f5ae23;
+  margin-top: 0px;
+  display: block;
+  padding: 20px 0;
+}
+
+.orange-text a:hover {
+  background-color: #000;
+  text-decoration: none;
 }
 
 .white-text {
@@ -133,12 +174,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #231f20;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #231f20;
 }
 
 .flex-box {
@@ -146,14 +187,18 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
+/*  justify-content: space-around;*/
+  padding: 10px 0;
 }
 
 .flex-column {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+.flex-item {
+  margin-right: 15px;
 }
 
 .center-content {
@@ -167,7 +212,7 @@ ul {
 .biopic {
   float: right;
   padding: 10px;
-  width: 200px;
+  width: 100px;
   display: none;
 }
 
@@ -182,7 +227,14 @@ span {
 #lets-connect {
   text-align: center;
   color: #fff;
-  margin-top: 2px;
+}
+
+#lets-connect h2 {
+  padding: 0px;
+}
+
+#footerContacts {
+  justify-content: space-around;
 }
 
 /* Media queries to handle various device widths */
