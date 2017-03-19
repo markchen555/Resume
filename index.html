@@ -2,38 +2,41 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Mark's Resume</title>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBc6hldvKWIinGfsFRxrBD66MyGrBPjlYs"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBc6hldvKWIinGfsFRxrBD66MyGrBPjlYs"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/animate.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="main" class="container">
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="main" class="container wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0s">
         <header id="header" class="center-content clear-fix">
             <ul id="topContacts" class="flex-box"></ul>
         </header>
 
         <div style="clear: both;"></div>
 
-        <div id="workExperience" class="white">
+        <div id="workExperience" class="white wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
             <h2>Work Experience</h2>
         </div>
 
-        <div id="projects" class="white">
+        <div id="projects" class="white wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
             <h2>Projects</h2>
         </div>
 
-        <div id="education" class="white">
+        <div id="education" class="white wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
             <h2>Education</h2>
         </div>
 
-        <div id="mapDiv" class= "white">
+        <div id="mapDiv" class= "white wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
             <h2>Where I've Lived and Worked</h2>
         </div>
 
-        <div id="lets-connect" class="dark-gray">
+        <div id="lets-connect" class="dark-gray wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s">
             <h2 class="orange-text center-text">
                 <a href="mailto:markchen555@gmail.com">Let's Connect</a>
             </h2>
@@ -44,6 +47,8 @@
     <script src="js/jQuery.js"></script>
     <script src="js/helper.js"></script>
     <script src="js/resumeBuilder.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
 
     if(document.getElementsByClassName('flex-item').length === 0) {
@@ -68,5 +73,14 @@
       document.getElementById('mapDiv').style.backgroundColor = "#bfbdd0";
     }
     </script>
+     <script>
+            wow = new WOW(
+                {
+                    animateClass: 'animated',
+                    offset:       100,
+                }
+            );
+            wow.init();
+        </script>
 </body>
 </html>
