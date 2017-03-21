@@ -47,8 +47,24 @@
             <ul id="footerContacts" class="flex-box">
             </ul>
         </div>
+
+        <!-- Pop up content start-->
+
+        <div id="modal">
+            <div class="modalconent">
+                <h2>About The Project</h2>
+                <br>
+                <p>This project is a JavaScrpt powered responsive resume website alone with HTML and CSS. The page is designed to generate a responsive resume website that will display personal information, images, descriptions and projects with link. The styling and layout is designed to be the same as provided mockup. In addition, the site has implemented with additional Google map API, jQuery, Bootstrap and animation features.</p>
+                <br>
+                <button id="exit">Close</button>
+            </div>
+        </div>
+
+        <!-- Pop up content close-->
+
     </div>
     <script src="js/jQuery.js"></script>
+    
     <script src="js/helper.js"></script>
     <script src="js/resumeBuilder.js"></script>
     <script src="js/scrolltop.js"></script>
@@ -85,6 +101,13 @@
                 }
             );
             wow.init();
-        </script>
+    </script>
+    <script>
+        window.onload = function () {
+            document.getElementById('exit').onclick = function () {
+                document.getElementById('modal').style.display = "none"
+            };
+        };
+    </script>
 </body>
 </html>
