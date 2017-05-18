@@ -153,6 +153,7 @@ a {
   text-decoration: none;
 }
 
+
 .white-text {
   /*font-weight: bold;*/
   color: #fff;
@@ -160,6 +161,18 @@ a {
 
 .grey-text {
   color: #b9bfc9;
+}
+
+.grey-text a {
+  color: #b9bfc9;
+  margin-top: 0px;
+  display: block;
+  padding: 20px 0;
+}
+
+.grey-text a:hover {
+  background-color: #231f20;
+  text-decoration: none;
 }
 
 .white {
