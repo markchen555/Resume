@@ -5,11 +5,11 @@ var bio = {
         "mobile": "626-254-3344",
         "email": "markchen555@gmail.com",
         "github": "markchen555",
-        "location": "Los Angeles"
+        "location": "Los Angeles, CA"
     },
-    "welcomeMessage": "I'm passionate Front-End Web Developer!",
+    "welcomeMessage": "A passionate Front-End Developer with experience building user-centric and responsive driven websites, using HTML5, CSS3, and various web scripting technologies. With strong knowledge in a various of computer languages as well as current web standards and project development and cooperation tools, I am a highly motivated web professional who is adept at conveying complex technical information to a variety of professional interfaces and lay audiences in a clear and understandable manner.",
     "skills": [
-        "C-Language", "JavaScript", "HTML", "CSS", "jQuery", "Bootstrap", "Knockout.js"
+        "HTML5 / CSS3 / APIs", "SCSS / sass", "Javascript / jQuery / AJAX / JSON", "Bootstrap / Responsive", "Knockout.js", "Object-Oriented Programming", "Website Optimization", "Cross Browser Compatibility Testing", "C-Language"
     ],
     "biopic": "images/me.png"
 };
@@ -19,26 +19,32 @@ var work = {
         "employer": "SHINGLIAN ASSOCIATES",
         "title": "Executive Assistant",
         "dates": "2015 - 2016",
-        "location": "West Covina",
-        "description": "Maintained and updated data for company website and social media platforms."
+        "location": "West Covina, CA",
+        "description": ["• Maintained and updated company website and social media platforms.", "• Produced analytic reports on website traffic and targeted customers.", "• Maintained Sage ACT! CRM database with up-to-date real estate records.", "• Conducted marketing materials through Photoshop and Illustrator."]
     }, {
         "employer": "JL MOTORING",
         "title": "Financial Analyst Associate",
-        "dates": "2013-2015",
-        "location": "City of Industry",
-        "description": "Assisted in updating website and preparing traffic analysis reports."
+        "dates": "2013 - 2015",
+        "location": "City of Industry, CA",
+        "description": ["• Maintained and updated company website and social media platforms.", "• Leveraged data from Google Analytics for marketing purposes.", "• Generated better revenue by analyzing price differentials from competitors.", "• Analyzed sales to optimize inventory control and predict sales trajectories."]
+    }, {
+        "employer": "LOTUS UNIKEY (PROJECT)",
+        "title": "Consultant",
+        "dates": "2012 - 2015",
+        "location": "Los Angeles, CA, San Jose, CA",
+        "description": ["• Codevelop a supercar key with remote integrated that was originally separated." ,"• Analyzed product price and sales data through market research to help fund-raising for $17,060, which was 156% funded.", "• Assisted with website content and structure for easier update and maintenance."]
     }, {
         "employer": "BANK OF AMERICA",
         "title": "Client Associate",
-        "dates": "2012-2013",
-        "location": "Monterey Park",
-        "description": "Managed customer transactions and promoted bank services and products."
+        "dates": "2012 - 2013",
+        "location": "Monterey Park, CA",
+        "description": ["• Earned the Browns Award for outstanding performance and achieved perfect score on bank auditing.", "• Managed customer transactions, processed sales referrals, and promoted bank services and product."]
     }, {
         "employer": "SHOWOPT",
         "title": "Market Analyst Internship",
-        "dates": "2011-2011",
-        "location": "Irvine",
-        "description": "Managed and maintained vBulleti n forum, website, and social media."
+        "dates": "2011 - 2011",
+        "location": "Irvine, CA",
+        "description": ["• Managed and maintained vBulletin forum, website, and social media platforms.", "• Monitored and analyzed website traffic with vBulletin marketing analysis tool.", "• Presented business value to users and vendors/sponsors via market analysis.", "• Coordinated on-site vendor/sponsor visits and interviews for media publications."]
     }]
 };
 
@@ -70,25 +76,25 @@ var projects = {
     "projects": [{
         "title": "Portfolio Site",
         "dates": "2017",
-        "description": "Building JavaScript portfolio site",
+        "description": "Built and personalized a resume powered by JavaScript and jQuery.",
         "url": "https://markchen555.github.io/Portfolio/",
         "images": ["images/Portfolio.png"]
     }, {
         "title": "HTML5 Canvas Game",
         "dates": "2017",
-        "description": "Created an online game using HTML5 Canvas",
+        "description": "Recreated the classic arcade game Frogger with Object-Oriented Javascript and HTML5 Canvas.",
         "url": "https://markchen555.github.io/Classic-Arcade-Game-Clone-Project/",
         "images": ["images/Game.png"]
     }, {
         "title": "Web Optimization",
         "dates": "2017",
-        "description": "Optimize website to run at 60fps",
+        "description": "Optimized PageSpeed insights score to above 90 and frames per second to 60 fps.",
         "url": "https://markchen555.github.io/Website-Optimization-Project/",
         "images": ["images/Optimize.png"]
     }, {
         "title": "Neighborhood Map",
         "dates": "2017",
-        "description": "Created search function within the neighborhood with Google and Yelp API",
+        "description": "Developed a single page website to display tea shops around school with Google and Yelp APIs.",
         "url": "https://markchen555.github.io/Neighborhood-Map-Project/public/",
         "images": ["images/Neighborhood.png"]
     }]
@@ -136,12 +142,17 @@ bio.display();
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
         var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-        var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+        //var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 
         $(".work-entry:last").append(formattedEmployerTitle);
         $(".work-entry:last").append(formattedDates);
         $(".work-entry:last").append(formattedLocation);
-        $(".work-entry:last").append(formattedDescription);
+        //$(".work-entry:last").append(formattedDescription);
+
+         for(var desc = 0; desc < work.jobs[job].description.length; desc++){
+            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[desc]);
+            $(".work-entry:last").append(formattedDescription);
+        }
     }
 };
 

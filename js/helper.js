@@ -24,7 +24,7 @@ var HTMLgithub = '<li class="flex-item"><span class="orange-text">Github:</span>
 var HTMLblog = '<li class="flex-item"><span class="orange-text">Blog:</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">Location:</span><span class="white-text">%data%</span></li>';
 
-var HTMLwelcomeMsg = '<hr><span class="welcome-message">%data%</span>';
+var HTMLwelcomeMsg = '<hr><span class="welcome-message">%data%</span><span><a target="_blank" href="http://markchen.info/Mark-Chen-Resume.pdf">Download My Resume</a></span>';
 
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
