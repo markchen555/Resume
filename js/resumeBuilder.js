@@ -95,7 +95,7 @@ var projects = {
         "title": "Neighborhood Map",
         "dates": "2017",
         "description": "Developed a single page website to display tea shops around school with Google and Yelp APIs.",
-        "url": "https://markchen555.github.io/Neighborhood-Map-Project/public/",
+        "url": "https://markchen555.github.io/Neighborhood-Map-Project/",
         "images": ["images/Neighborhood.png"]
     }]
 };
