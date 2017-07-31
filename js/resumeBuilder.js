@@ -9,7 +9,7 @@ var bio = {
     },
     "welcomeMessage": "A passionate Front-End Developer with experience building user-centric and responsive driven websites, using HTML5, CSS3, and various web scripting technologies. With strong knowledge in a various of computer languages as well as current web standards and project development and cooperation tools, I am a highly motivated web professional who is adept at conveying complex technical information to a variety of professional interfaces and lay audiences in a clear and understandable manner.",
     "skills": [
-        "HTML5 / CSS3 / APIs", "SCSS / sass", "Javascript / jQuery / AJAX / JSON", "Bootstrap / Responsive", "Knockout.js", "Object-Oriented Programming", "Website Optimization", "Cross Browser Compatibility Testing", "C-Language"
+        "HTML5 / CSS3 / APIs", "SCSS / sass", "Javascript / jQuery / AJAX / JSON", "Bootstrap / Responsive", "Knockout.js", "React.js", "Object-Oriented Programming", "Website Optimization", "Cross Browser Compatibility Testing", "C-Language"
     ],
     "biopic": "images/me.png"
 };
@@ -97,6 +97,12 @@ var projects = {
         "description": "Developed a single page website to display tea shops around school with Google and Yelp APIs.",
         "url": "https://markchen555.github.io/Neighborhood-Map-Project/",
         "images": ["images/Neighborhood.png"]
+    },{
+        "title": "Github Battle",
+        "dates": "2017",
+        "description": "Developed a single page Github score battling website using React.js, Axios Api, Babel, Webpack and Firebase.",
+        "url": "https://github-battle-a2f94.firebaseapp.com",
+        "images": ["images/github-battle.png"]
     }]
 };
 
@@ -105,18 +111,18 @@ bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-    
+
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
     $("#header").prepend(formattedBioPic);
     $("#header").append(formattedWelcomeMsg);
-    
+
     var formattedContactInfo = [];
     formattedContactInfo.push(HTMLemail.replace("%data%", bio.contacts.email));
     formattedContactInfo.push(HTMLgithub.replace("%data%", bio.contacts.github));
     formattedContactInfo.push(HTMLmobile.replace("%data%", bio.contacts.mobile));
     formattedContactInfo.push(HTMLlocation.replace("%data%", bio.contacts.location));
-    
+
     formattedContactInfo.forEach(function(contact) {
         $("#topContacts").append(contact);
         $("#footerContacts").append(contact);
@@ -124,7 +130,7 @@ bio.display = function() {
 
     if (bio.skills.length > 0) {
         $("#header").append(HTMLskillsStart);
-        for (var skill = 0; skill < bio.skills.length; skill++) {    
+        for (var skill = 0; skill < bio.skills.length; skill++) {
             var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
             $("#skills").append(formattedSkill);
         }
