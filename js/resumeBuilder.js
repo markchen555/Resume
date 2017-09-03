@@ -9,7 +9,7 @@ var bio = {
     },
     "welcomeMessage": "A passionate Front-End Developer with experience building user-centric and responsive driven websites, using HTML5, CSS3, and various web scripting technologies. With strong knowledge in a various of computer languages as well as current web standards and project development and cooperation tools, I am a highly motivated web professional who is adept at conveying complex technical information to a variety of professional interfaces and lay audiences in a clear and understandable manner.",
     "skills": [
-        "HTML5 / CSS3 / APIs", "SCSS / sass", "Javascript / jQuery / AJAX / JSON", "Angular.js / React.js / Knockout.js", "Bootstrap / Responsive", "Object-Oriented Programming", "Website Optimization", "Cross Browser Compatibility Testing", "C-Language"
+        "HTML5 / CSS3 / APIs", "SCSS / sass", "Javascript / jQuery / AJAX / JSON", "Angular.js / React.js / Backbone.js /Knockout.js", "Bootstrap / Responsive", "Object-Oriented Programming", "Website Optimization", "Cross Browser Compatibility Testing", "C-Language"
     ],
     "biopic": "images/me.png"
 };
